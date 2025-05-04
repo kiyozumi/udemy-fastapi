@@ -35,3 +35,4 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 # Run the FastAPI application by default
 CMD ["fastapi", "dev", "--host", "0.0.0.0", "/app/src/main"]
+#CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--reload")

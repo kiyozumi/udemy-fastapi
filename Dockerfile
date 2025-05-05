@@ -33,6 +33,5 @@ COPY --from=builder --chown=app:app /app /app
 # Place executables in the environment at the front of the path
 ENV PATH="/app/.venv/bin:$PATH"
 
-# Run the FastAPI application by default
-CMD ["fastapi", "dev", "--host", "0.0.0.0", "/app/src/main"]
-#CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--reload")
+ Run the FastAPI application by default
+CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--reload")

@@ -3,7 +3,8 @@ services:
     # Build the image from the Dockerfile in the current directory
     build: .
     container_name: udemy-fastapi-container
-
+    env_file:
+      - .env
     # Host the FastAPI application on port 8000
     ports:
       - "8000:8000"

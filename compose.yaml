@@ -1,7 +1,9 @@
 services:
   web:
-    # Build the image from the Dockerfile in the current directory
-    build: .
+    build:
+      context: .
+      target: develop
+
     container_name: udemy-fastapi-container
     env_file:
       - .env

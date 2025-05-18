@@ -5,8 +5,5 @@
     <option name="sdkName" value="Python 3.12 (base)" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.13.3 Docker Compose (web)" project-jdk-type="Python SDK" />
 </project>
